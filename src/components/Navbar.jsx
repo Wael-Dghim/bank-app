@@ -29,21 +29,21 @@ const Navbar = () => {
         />
         <div
           className={`${
-            toggle ? "flex" : "hidden"
+            toggle
+              ? "flex flex-col justify-end items- center text-white list-none p-6"
+              : "hidden"
           } bg-black-gradient p-6 absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
         >
-          <ul className="list-none flex flex-col hidden justify-end items-center flex-1">
-            {navLinks.map((nav, index) => (
-              <li
-                key={nav.id}
-                className={`font-poppins font-normal cursor-pointer text-[16px] ${
-                  index === navLinks.length - 1 ? "mr-0" : "mr-10"
-                } text-white`}
-              >
-                <a href={`#${nav.id}`}>{nav.title}</a>
-              </li>
-            ))}
-          </ul>
+          {navLinks.map((nav, index) => (
+            <li
+              key={nav.id}
+              className={`font-poppins font-normal cursor-pointer text-[16px] ${
+                index === navLinks.length - 1 ? "mr-0" : "mb-2"
+              } text-red`}
+            >
+              <a href={`#${nav.id}`}>{nav.title}</a>
+            </li>
+          ))}
         </div>
       </div>
     </nav>
