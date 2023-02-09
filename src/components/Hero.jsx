@@ -4,14 +4,11 @@ import GetStarted from "./GetStarted";
 
 const Hero = () => {
   return (
-    <section
-      id="home"
-      className={`flex md:flex-row flex-col ${styles.paddingY}`}
-    >
+    <section id="home" className={`flex md:flex-row flex-col py-4`}>
       <div
         className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}
       >
-        <div className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
+        <div className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-6 ">
           <img src={discount} alt="discount" className="w-[32px] h-[32px]" />
           <p className={`${styles.paragraph} ml-2`}>
             <span className="text-white">20%</span> Discount for
@@ -32,7 +29,9 @@ const Hero = () => {
         <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100px] leading-[75px] w-full">
           Payment Method
         </h1>
-        <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+        <p
+          className={`${styles.paragraph} max-w-[470px] mt-5 sm:mb-4 md:mb-4 xs:mb-4`}
+        >
           Our team of experts uses a methodology to identify the credit cards
           most likely to fit your needs. We examine annual percentage rates,
           annual fees.
@@ -40,7 +39,7 @@ const Hero = () => {
       </div>
       <div>
         <img
-          className="w-[100%] h-[100%] relative z-[5]"
+          className="w-[100%] h-[78%] object-left relative z-[5]"
           src={robot}
           alt="billing"
         />
