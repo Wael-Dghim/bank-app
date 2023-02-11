@@ -24,13 +24,13 @@ const Navbar = () => {
         <img
           src={toggle ? close : menu}
           alt="menu"
-          className="w-full h-[28px] object-contain"
+          className="mr-6 h-[28px] object-contain"
           onClick={() => setToggle((prev) => !prev)}
         />
         <div
           className={`${
             toggle
-              ? "flex flex-col justify-end items- center text-white list-none p-6"
+              ? "flex flex-col justify-end items- center text-white list-none -6"
               : "hidden"
           } bg-black-gradient p-6 absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
         >
