@@ -12,11 +12,11 @@ const CTA = () => {
           Everything you need to accept card payments and grow your business
           anywhere on the planet.
         </p>
-        <div
-          className={`${styles.flexCenter} sm:ml-10 ml-0 sm:mt-0 mt-10 float-right`}
-        >
-          <Button styles="" />
-        </div>
+      </div>
+      <div
+        className={`${styles.flexCenter} sm:ml-10 ml-0 sm:mt-0 mt-10 float-right`}
+      >
+        <Button styles="" />
       </div>
     </section>
   );
