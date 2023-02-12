@@ -21,7 +21,7 @@ const Testimonials = () => {
           </p>
         </div>
       </div>
-      <div className="w-full flex flex-wrap justify-center w-full feedback-container relative z-[1]">
+      <div className="w-full flex flex-wrap justify-center feedback-container relative z-[1]">
         {feedback.map((card) => (
           <FeedBackCard key={card.id} {...card} />
         ))}
