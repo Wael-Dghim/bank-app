@@ -13,7 +13,7 @@ const Clients = () => {
             <img
               src={client.logo}
               alt="client"
-              className="sm:w-[192px] w-[100px] object-contain my-5 animate-pulse"
+              className="sm:w-[192px] w-[100px] object-contain my-5 animate-pulse hover:animate-none"
             />
           </div>
         ))}
